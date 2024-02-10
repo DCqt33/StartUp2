@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="168.0" fitWidth="155.0" layoutX="17.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pics/BankIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="116.0" prefHeight="127.0" prefWidth="174.0" text="BANKS">
+         <font>
+            <Font name="Inter Regular" size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="298.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="303.0" styleClass="orangebutton" stylesheets="@button.css" text="Traditional" textFill="#fff8f8">
+         <font>
+            <Font name="Inter Regular" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="382.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="303.0" styleClass="orangebutton" stylesheets="@button.css" text="Digital Banks" textFill="#fffefe">
+         <font>
+            <Font name="Inter Regular" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
