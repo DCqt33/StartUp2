@@ -11,12 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="170.0" fitWidth="335.0" layoutX="18.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Pics/BDOlogo.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="24.0" layoutY="231.0" prefHeight="81.0" prefWidth="325.0" text="Current Interest Rate: 0.0625% p.a">
+      <Label layoutX="36.0" layoutY="242.0" prefHeight="61.0" prefWidth="314.0" text="Current Interest Rate: 5% p.a">
          <font>
             <Font name="Inter Regular" size="19.0" />
          </font>
@@ -41,7 +36,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
          <tooltip>
-            <Tooltip text="Min Balance to earned: ₱5000">
+            <Tooltip text="No Min Balance to earn">
                <font>
                   <Font name="Inter Regular" size="14.0" />
                </font>
@@ -57,5 +52,10 @@
             </ImageView>
          </graphic>
       </Button>
+      <ImageView fitHeight="168.0" fitWidth="308.0" layoutX="31.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pics/GotymeLogo2.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
