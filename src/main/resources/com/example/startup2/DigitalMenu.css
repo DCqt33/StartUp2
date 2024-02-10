@@ -1,0 +1,71 @@
+.button
+{
+    -fx-shape:"M 140 460 A 50 50 0 1 1 130 300 Q 380 300 600 300 A 50 50 0 1 1 600 460 L 380 460 Z Z"
+}
+
+.CimbBttn
+{
+    -fx-background-color:#EB6767;
+}
+.CimbBttn:pressed
+{
+    -fx-background-color:#EF1C1C;
+}
+.MayaBttn
+{
+    -fx-background-color:#004721;
+}
+.MayaBttn:pressed
+{
+    -fx-background-color:#087A3D;
+}
+.NetBttn
+{
+    -fx-background-color:#85A2CF;
+}
+.NetBttn:pressed
+{
+    -fx-background-color:#20375B;
+}
+.GotymeBttn
+{
+    -fx-background-color:#1DEAEA;
+}
+.GotymeBttn:pressed
+{
+    -fx-background-color:#00FFFF;
+}
+.BDOBttn
+{
+    -fx-background-color:#263CB0;
+}
+.BDOBttn:pressed
+{
+    -fx-background-color:#324FE4;
+}
+.LandBankBttn
+{
+    -fx-background-color:#0E5637;
+}
+.LandBankBttn:pressed
+{
+    -fx-background-color:#347F5F;
+}
+.BPIlogoBttn
+{
+    -fx-background-color:#9F0914;
+}
+.BPIlogoBttn:pressed
+{
+    -fx-background-color:#D30C1B;
+}
+.PsbankBttn
+{
+    -fx-background-color:#40A9F5;
+}
+.PsbankBttn:pressed
+{
+    -fx-background-color:#327FB8;
+}
+
+
