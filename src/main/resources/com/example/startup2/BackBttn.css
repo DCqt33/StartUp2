@@ -1,5 +1,6 @@
 .Backbutton
 {
+    -fx-shape:"M 100 300 A 50 50 0 1 1 450 300 A 50 50 0 1 1 100 350 L 100 350 Z";
     -fx-background-color:#DBF0FF;
 }
 .Backbutton:pressed
