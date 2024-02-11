@@ -15,7 +15,7 @@
             <Image url="@../Pics/PSBanklogo2.png" />
          </image>
       </ImageView>
-      <Label layoutX="24.0" layoutY="231.0" prefHeight="81.0" prefWidth="325.0" text="Current Interest Rate: 0.0625% p.a">
+      <Label layoutX="24.0" layoutY="231.0" prefHeight="81.0" prefWidth="325.0" text="Current Interest Rate: 0.100% p.a">
          <font>
             <Font name="Inter Regular" size="19.0" />
          </font>
@@ -29,17 +29,17 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button alignment="CENTER" layoutX="123.0" layoutY="462.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="140.0" stylesheets="@button.css" text="Exit" textFill="#fffefe">
+      <Button alignment="CENTER" layoutX="124.0" layoutY="463.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="140.0" stylesheets="@button.css" text="Exit" textFill="#fffefe">
          <font>
             <Font name="Inter Regular" size="22.0" />
          </font>
       </Button>
-      <TextField editable="false" layoutX="39.0" layoutY="384.0" prefHeight="42.0" prefWidth="313.0" styleClass="centered-text-area" stylesheets="@OutputText.css" text="dwada">
+      <TextField fx:id="Months" editable="false" layoutX="39.0" layoutY="384.0" prefHeight="42.0" prefWidth="313.0" styleClass="centered-text-area" stylesheets="@OutputText.css" text="dwada">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField editable="false" layoutX="37.0" layoutY="324.0" prefHeight="42.0" prefWidth="313.0" styleClass="centered-text-area" stylesheets="@OutputText.css" text="dwada">
+      <TextField fx:id="FinalTotal" editable="false" layoutX="37.0" layoutY="324.0" prefHeight="42.0" prefWidth="313.0" styleClass="centered-text-area" stylesheets="@OutputText.css" text="dwada">
          <font>
             <Font size="20.0" />
          </font>

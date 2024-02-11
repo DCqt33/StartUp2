@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="DigitalBanMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="DigitalBanMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startup2.DigitalBankMenuC">
    <children>
       <ImageView fitHeight="132.0" fitWidth="141.0" layoutX="18.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -41,7 +41,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="NetBankBttn" layoutX="24.0" layoutY="360.0" mnemonicParsing="false" onAction="#toNetBank_calc" prefHeight="99.0" prefWidth="160.0" stylesheets="@DigitalMenu.css">
+      <Button fx:id="NetBankBttn" layoutX="24.0" layoutY="360.0" mnemonicParsing="false" onAction="#toNetbank_calc" prefHeight="99.0" prefWidth="160.0" stylesheets="@DigitalMenu.css">
          <styleClass>
             <String fx:value="CimbBttn" />
             <String fx:value="NetBttn" />

@@ -13,8 +13,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BankMenuC{
-
+public class BankMenuC
+{
     @FXML
     private AnchorPane BankScenePage;
 

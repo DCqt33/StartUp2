@@ -9,29 +9,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startup2.PSBank_C">
    <children>
       <Label layoutX="27.0" layoutY="234.0" prefHeight="81.0" prefWidth="314.0" text="Current Interest Rate: 0.100% p.a">
          <font>
             <Font name="Inter Regular" size="19.0" />
          </font>
       </Label>
-      <TextField alignment="CENTER" layoutX="44.0" layoutY="323.0" prefHeight="40.0" prefWidth="266.0" promptText="Input Amount" styleClass="textfield" stylesheets="@TextField.css">
+      <TextField fx:id="PsbankAmt" alignment="CENTER" layoutX="44.0" layoutY="310.0" prefHeight="40.0" prefWidth="266.0" promptText="Input Amount" styleClass="textfield" stylesheets="@TextField.css">
          <font>
             <Font name="Inter Regular" size="12.0" />
          </font>
       </TextField>
-      <Button alignment="CENTER" layoutX="92.0" layoutY="457.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="195.0" stylesheets="@button.css" text="ENTER" textFill="#fffefe">
+      <Button fx:id="PSBank_enter" alignment="CENTER" layoutX="92.0" layoutY="471.0" mnemonicParsing="false" onAction="#toPSBank_output" prefHeight="22.0" prefWidth="156.0" stylesheets="@button.css" text="ENTER" textFill="#fffefe">
          <font>
             <Font name="Inter Regular" size="22.0" />
          </font>
       </Button>
-      <TextField alignment="CENTER" layoutX="44.0" layoutY="390.0" prefHeight="40.0" prefWidth="266.0" promptText="Input Months" styleClass="textfield" stylesheets="@TextField.css">
+      <TextField fx:id="PSBankMonth" alignment="CENTER" layoutX="44.0" layoutY="362.0" prefHeight="40.0" prefWidth="266.0" promptText="Input Months" styleClass="textfield" stylesheets="@TextField.css">
          <font>
             <Font name="Inter Regular" size="12.0" />
          </font>
       </TextField>
-      <Button layoutX="317.0" layoutY="330.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="37.0" styleClass="QuestionMark" stylesheets="@QMark.css" text="?">
+      <Button layoutX="317.0" layoutY="316.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="37.0" styleClass="QuestionMark" stylesheets="@QMark.css" text="?">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -43,7 +43,7 @@
             </Tooltip>
          </tooltip>
       </Button>
-      <Button layoutX="7.0" layoutY="12.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="57.0" styleClass="Backbutton" stylesheets="@BackBttn.css">
+      <Button fx:id="BackBttn" layoutX="7.0" layoutY="12.0" mnemonicParsing="false" onAction="#toTraditionalBank" prefHeight="45.0" prefWidth="57.0" styleClass="Backbutton" stylesheets="@BackBttn.css">
          <graphic>
             <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -57,5 +57,10 @@
             <Image url="@../Pics/PSBanklogo2.png" />
          </image>
       </ImageView>
+      <TextField fx:id="PSBankResult" alignment="CENTER" editable="false" layoutX="44.0" layoutY="421.0" prefHeight="40.0" prefWidth="266.0" promptText="Result" styleClass="textfield" stylesheets="@TextField.css">
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
