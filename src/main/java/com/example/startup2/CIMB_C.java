@@ -35,12 +35,12 @@ public class CIMB_C
             double CIMBAMT = Double.parseDouble(CIMBamt.getText());
             int CIMBm = Integer.parseInt(CIMBmonths.getText());
 
-            if (CIMBAMT < 0 || CIMBm < 0 || CIMBm > 1000) {
+            if (CIMBAMT < 0 || CIMBm < 0 || CIMBm >= 1000) {
                 CIMBresult.setText("ERROR");
 
             } else
             {
-                Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(CIMBamt.getText()), 0.000625, Integer.parseInt(CIMBmonths.getText()));
+                Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(CIMBamt.getText()), 0.026, Integer.parseInt(CIMBmonths.getText()));
 
                 CIMBresult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(CIMBmonths.getText())));
 
@@ -50,8 +50,6 @@ public class CIMB_C
         {
             CIMBresult.setText("WRONG INPUT");
         }
-
-
 
     }
 

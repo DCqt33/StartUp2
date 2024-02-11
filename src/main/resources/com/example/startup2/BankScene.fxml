@@ -29,7 +29,7 @@
             <Font name="Inter Regular" size="29.0" />
          </font>
       </Button>
-      <Button layoutX="19.0" layoutY="30.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="57.0" styleClass="Backbutton" stylesheets="@BackBttn.css">
+      <Button fx:id="backbttn" layoutX="19.0" layoutY="30.0" mnemonicParsing="false" onAction="#toStartUpM" prefHeight="45.0" prefWidth="57.0" styleClass="Backbutton" stylesheets="@BackBttn.css">
          <graphic>
             <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>

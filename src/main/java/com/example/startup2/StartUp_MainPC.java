@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+
 public class StartUp_MainPC {
 
     @FXML
@@ -40,10 +41,11 @@ public class StartUp_MainPC {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     @FXML
-    public void toDatabase(ActionEvent event) {
+    void toDatabase(ActionEvent event) {
         try {
             // Load the FXML file
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Transaction.fxml"));
@@ -60,13 +62,7 @@ public class StartUp_MainPC {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
+
 }
-
-
-
-
-
-
-
-

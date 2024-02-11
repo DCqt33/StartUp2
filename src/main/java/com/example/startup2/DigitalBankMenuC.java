@@ -14,7 +14,6 @@ import java.io.IOException;
 
 public class DigitalBankMenuC {
 
-
     @FXML
     private Button CIMBbttn;
 
@@ -32,73 +31,33 @@ public class DigitalBankMenuC {
 
     @FXML
     void toCIMB_calc(ActionEvent event) {
-        try {
-            // Load the FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("CIMB_calc.fxml"));
-            Parent root = loader.load();
-
-            // Create a new stage
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-
-            // Close the current window (optional)
-            Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            currentStage.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
+        openFXML("CIMB_calc.fxml", event);
     }
 
     @FXML
     void toGotyme_calc(ActionEvent event) {
-        try {
-            // Load the FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Gotyme_calc.fxml"));
-            Parent root = loader.load();
-
-            // Create a new stage
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-
-            // Close the current window (optional)
-            Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            currentStage.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        openFXML("Gotyme_calc.fxml", event);
     }
 
     @FXML
     void toMaya_calc(ActionEvent event) {
-        try {
-            // Load the FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Maya_calc.fxml"));
-            Parent root = loader.load();
-
-            // Create a new stage
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-
-            // Close the current window (optional)
-            Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            currentStage.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        openFXML("Maya_calc.fxml", event);
     }
 
     @FXML
     void toNetbank_calc(ActionEvent event) {
+        openFXML("Netbank_calc.fxml", event);
+    }
+
+    @FXML
+    void toBankscene(ActionEvent event) {
+        openFXML("BankScene.fxml", event); // Replace "" with the correct FXML filename
+    }
+
+    private void openFXML(String fxmlFileName, ActionEvent event) {
         try {
             // Load the FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Netbank_calc.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));
             Parent root = loader.load();
 
             // Create a new stage
@@ -112,9 +71,5 @@ public class DigitalBankMenuC {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
-
-
 }

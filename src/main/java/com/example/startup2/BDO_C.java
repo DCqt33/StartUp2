@@ -35,7 +35,7 @@ public class BDO_C {
             double BDOAMT = Double.parseDouble(BDOamt.getText());
             int BDOm = Integer.parseInt(BDOmonth.getText());
 
-            if (BDOAMT < 5000 || BDOm < 0 || BDOm > 1000) {
+            if (BDOAMT < 5000 || BDOm < 0 || BDOm >= 1000) {
                 BDOResult.setText("ERROR");
 
             } else

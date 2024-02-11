@@ -15,7 +15,7 @@
             <Image url="@../Pics/BankIcon.png" />
          </image>
       </ImageView>
-      <Label layoutX="143.0" layoutY="140.0" prefHeight="59.0" prefWidth="233.0" text="Banks">
+      <Label layoutX="143.0" layoutY="140.0" prefHeight="59.0" prefWidth="233.0" text="Banks" textFill="#070000">
          <font>
             <Font name="Inter Bold" size="26.0" />
          </font>
@@ -67,10 +67,14 @@
             <String fx:value="GotymeBttn" />
          </styleClass>
       </Button>
-      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="8.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Pics/BackBttn.png" />
-         </image>
-      </ImageView>
+      <Button fx:id="Backbttn" layoutX="17.0" layoutY="25.0" mnemonicParsing="false" onAction="#toBankscene" styleClass="Backbutton" stylesheets="@BackBttn.css">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pics/BackBttn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
