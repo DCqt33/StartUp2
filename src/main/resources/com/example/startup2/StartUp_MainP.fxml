@@ -7,16 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startup2.HelloController">
-   <ImageView fitHeight="118.0" fitWidth="66.0" layoutX="172.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
-      <Image url="@../Pics/Dollar Sign.png" />
-   </ImageView>
-   <Label layoutX="238.0" layoutY="127.0" prefHeight="78.0" prefWidth="130.0" text="tart" textFill="#070000">
+<AnchorPane fx:id="MainPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="370.0" style="-fx-background-color: DBF0FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startup2.StartUp_MainPC">
+   <Label layoutX="163.0" layoutY="110.0" prefHeight="94.0" prefWidth="221.0" text="Start" textFill="#070000">
       <font>
          <Font name="Roboto Mono Bold Italic" size="51.0" />
       </font>
    </Label>
-   <Label layoutX="182.0" layoutY="206.0" prefHeight="62.0" prefWidth="118.0" text="UP">
+   <Label layoutX="167.0" layoutY="185.0" prefHeight="62.0" prefWidth="118.0" text="UP">
       <font>
          <Font name="Roboto Mono Bold Italic" size="52.0" />
       </font>
@@ -24,12 +21,12 @@
    <ImageView fitHeight="155.0" fitWidth="159.0" layoutX="12.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../Pics/LogoMP.png" />
    </ImageView>
-   <Button fx:id="SavingButton" layoutX="33.0" layoutY="316.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="303.0" styleClass="button" stylesheets="@button.css" text="Savings Calculator" textFill="#ffeeee">
+   <Button fx:id="SavingButton" layoutX="33.0" layoutY="316.0" mnemonicParsing="false" onAction="#toBankScene" prefHeight="62.0" prefWidth="303.0" styleClass="button" stylesheets="@button.css" text="Savings Calculator" textFill="#ffeeee">
       <font>
          <Font name="Inter SemiBold" size="19.0" />
       </font>
    </Button>
-   <Button fx:id="TransactionButton" layoutX="33.0" layoutY="404.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="303.0" stylesheets="@button.css" text="Transactions" textFill="WHITE">
+   <Button fx:id="TransactionButton" layoutX="33.0" layoutY="404.0" mnemonicParsing="false" onAction="#toDatabase" prefHeight="51.0" prefWidth="303.0" stylesheets="@button.css" text="Transactions" textFill="WHITE">
       <font>
          <Font name="Inter SemiBold" size="19.0" />
       </font>

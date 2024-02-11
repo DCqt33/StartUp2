@@ -1,0 +1,11 @@
+
+.centered-text-area {
+    -fx-alignment: center; /* Vertical centering */
+}
+.centered-text-area {
+    -fx-text-alignment: center; /* Horizontal centering */
+}
+.centered-text-area .text {
+  -fx-text-alignment: center;
+
+}
