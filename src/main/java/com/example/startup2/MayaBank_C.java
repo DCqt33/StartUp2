@@ -27,7 +27,8 @@ public class MayaBank_C {
 
     @FXML
     private TextField MayaResult;
-
+    @FXML
+    private Button ExitBttn;
     @FXML
     void toMayaBank_output(ActionEvent event) {
 
@@ -63,6 +64,7 @@ public class MayaBank_C {
             // Create a new stage
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("StartUp");
             stage.show();
 
             // Close the current window (optional)
@@ -71,6 +73,12 @@ public class MayaBank_C {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
 
     }
+
 }

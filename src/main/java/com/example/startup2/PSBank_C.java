@@ -59,6 +59,7 @@ public class PSBank_C {
             // Create a new stage
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("StartUp");
             stage.show();
 
             // Close the current window (optional)
@@ -69,5 +70,8 @@ public class PSBank_C {
         }
 
     }
-
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
+    }
 }

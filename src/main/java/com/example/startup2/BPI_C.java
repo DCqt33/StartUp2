@@ -1,5 +1,6 @@
 package com.example.startup2;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,6 +27,9 @@ public class BPI_C {
 
     @FXML
     private Button BackBttn;
+
+    @FXML
+    private Button ExitBttn;
 
     @FXML
     void toBPI_output(ActionEvent event) {
@@ -63,6 +67,7 @@ public class BPI_C {
             // Create a new stage
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("StartUp");
             stage.show();
 
             // Close the current window (optional)
@@ -72,6 +77,11 @@ public class BPI_C {
             e.printStackTrace();
         }
 
+
+    }
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
 
     }
 }

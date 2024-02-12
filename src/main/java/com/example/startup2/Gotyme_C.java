@@ -28,6 +28,8 @@ public class Gotyme_C {
     @FXML
     private Button backbttn;
 
+    @FXML
+    private Button ExitBttn;
 
     @FXML
     void toGotyme_output(ActionEvent event) {
@@ -63,6 +65,7 @@ public class Gotyme_C {
             // Create a new stage
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("StartUp");
             stage.show();
 
             // Close the current window (optional)
@@ -72,5 +75,9 @@ public class Gotyme_C {
             e.printStackTrace();
         }
     }
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
 
+    }
 }

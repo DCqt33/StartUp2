@@ -28,6 +28,9 @@ public class CIMB_C
 
     @FXML
     private Button backBttn;
+
+    @FXML
+    private Button ExitBttn;
     @FXML
     void toCimb_output(ActionEvent event) {
         try {
@@ -63,6 +66,7 @@ public class CIMB_C
             // Create a new stage
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("StartUp");
             stage.show();
 
             // Close the current window (optional)
@@ -73,4 +77,11 @@ public class CIMB_C
         }
 
     }
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
+
+    }
+
 }
+

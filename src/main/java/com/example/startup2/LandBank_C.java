@@ -28,8 +28,13 @@ public class LandBank_C {
 
     @FXML
     private Button LandBank_Enter;
+
+    @FXML
+    private Button ExitBttn;
+
     @FXML
     void toLandBank_output(ActionEvent event) {
+
         try {
             //Interest Calculator
             double LANDBANKamt = Double.parseDouble(LandBankAMT.getText());
@@ -62,6 +67,7 @@ public class LandBank_C {
 
             // Create a new stage
             Stage stage = new Stage();
+            stage.setTitle("StartUp");
             stage.setScene(new Scene(root));
             stage.show();
 
@@ -71,8 +77,10 @@ public class LandBank_C {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
+    }
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
     }
 
 }

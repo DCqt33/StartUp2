@@ -1,6 +1,5 @@
 package com.example.startup2;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,6 +20,9 @@ public class TransactionC {
     private Button backbttn;
 
     @FXML
+    private Button ExitBttn;
+
+    @FXML
     void toStartupM(ActionEvent event) {
         try {
             // Load the FXML file
@@ -30,7 +32,9 @@ public class TransactionC {
             // Create a new stage
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("StartUp");
             stage.show();
+
 
             // Close the current window (optional)
             Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -39,4 +43,10 @@ public class TransactionC {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    void ToExitPrg(ActionEvent event) {
+        Main.exitApplication();
+    }
 }
+
