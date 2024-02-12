@@ -26,9 +26,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <TableView layoutX="17.0" layoutY="225.0" prefHeight="270.0" prefWidth="384.0">
+      <TableView fx:id="DBtable" layoutX="17.0" layoutY="225.0" prefHeight="270.0" prefWidth="384.0">
         <columns>
-          <TableColumn fx:id="DBTable" prefWidth="75.0" text="T_Bank" />
+          <TableColumn prefWidth="75.0" text="T_Bank" />
           <TableColumn prefWidth="75.0" text="BankName" />
             <TableColumn prefWidth="75.0" text="Months" />
             <TableColumn prefWidth="75.0" text="Amount" />
