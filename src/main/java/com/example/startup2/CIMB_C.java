@@ -31,6 +31,8 @@ public class CIMB_C
 
     @FXML
     private Button ExitBttn;
+    String type ="Digital";
+    String name = "CIMB";
     @FXML
     void toCimb_output(ActionEvent event) {
         try {
@@ -46,6 +48,7 @@ public class CIMB_C
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(CIMBamt.getText()), 0.026, Integer.parseInt(CIMBmonths.getText()));
 
                 CIMBresult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(CIMBmonths.getText())));
+                DatabaseHandler.insertData(type, name, CIMBAMT, CIMBm);
 
             }
 

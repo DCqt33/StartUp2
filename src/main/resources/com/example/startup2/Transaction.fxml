@@ -26,13 +26,12 @@
             </ImageView>
          </graphic>
       </Button>
-      <TableView fx:id="DBtable" layoutX="17.0" layoutY="225.0" prefHeight="270.0" prefWidth="384.0">
+      <TableView fx:id="DBtable" layoutX="56.0" layoutY="196.0" prefHeight="256.0" prefWidth="295.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="T_Bank" />
-          <TableColumn prefWidth="75.0" text="BankName" />
-            <TableColumn prefWidth="75.0" text="Months" />
-            <TableColumn prefWidth="75.0" text="Amount" />
-            <TableColumn prefWidth="83.0" text="Profit" />
+          <TableColumn fx:id="TBank" prefWidth="75.0" text="T_Bank" />
+          <TableColumn fx:id="BankN" prefWidth="75.0" text="BankName" />
+            <TableColumn fx:id="Months" prefWidth="75.0" text="Months" />
+            <TableColumn fx:id="AMT" prefWidth="75.0" text="Amount" />
         </columns>
       </TableView>
       <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="319.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
@@ -41,6 +40,14 @@
          </image>
       </ImageView>
       <Button fx:id="ExitBttn" alignment="CENTER" layoutX="350.0" layoutY="39.0" mnemonicParsing="false" onAction="#ToExitPrg" prefHeight="26.0" prefWidth="51.0" stylesheets="@button.css" text="EXIT" textFill="#fffefe">
+         <font>
+            <Font name="Inter Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="ViewBttn" alignment="CENTER" layoutX="165.0" layoutY="471.0" mnemonicParsing="false" onAction="#ToViewBD" prefHeight="28.0" prefWidth="110.0" stylesheets="@button.css" text="VIEW" textFill="#fffefe">
          <font>
             <Font name="Inter Regular" size="14.0" />
          </font>

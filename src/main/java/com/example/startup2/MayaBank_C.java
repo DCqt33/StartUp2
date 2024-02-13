@@ -29,6 +29,8 @@ public class MayaBank_C {
     private TextField MayaResult;
     @FXML
     private Button ExitBttn;
+    String type ="Digital";
+    String name = "MayaBank";
     @FXML
     void toMayaBank_output(ActionEvent event) {
 
@@ -43,8 +45,8 @@ public class MayaBank_C {
             } else
             {
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(MayaAMT.getText()), 0.035, Integer.parseInt(MAYAmonths.getText()));
-
                 MayaResult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(MAYAmonths.getText())));
+                DatabaseHandler.insertData(type, name, MAYAAMT, MAYAm);
 
             }
 

@@ -30,6 +30,8 @@ public class Gotyme_C {
 
     @FXML
     private Button ExitBttn;
+    String type ="Digital";
+    String name = "Gotyme";
 
     @FXML
     void toGotyme_output(ActionEvent event) {
@@ -44,8 +46,9 @@ public class Gotyme_C {
             } else
             {
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(GotymeAMT.getText()), 0.05, Integer.parseInt(GotymeMonths.getText()));
-
                 GOtymeResult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(GotymeMonths.getText())));
+                DatabaseHandler.insertData(type, name, GoTymeamt, GotymeM);
+
 
             }
 

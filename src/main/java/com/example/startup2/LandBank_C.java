@@ -31,6 +31,8 @@ public class LandBank_C {
 
     @FXML
     private Button ExitBttn;
+    String type ="Traditional";
+    String name = "LandBank";
 
     @FXML
     void toLandBank_output(ActionEvent event) {
@@ -48,6 +50,7 @@ public class LandBank_C {
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(LandBankAMT.getText()), 0.0005, Integer.parseInt(LandBankMonths.getText()));
 
                 LandBankResult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(LandBankMonths.getText())));
+                DatabaseHandler.insertData(type, name, LANDBANKamt, LandBankm);
 
             }
 

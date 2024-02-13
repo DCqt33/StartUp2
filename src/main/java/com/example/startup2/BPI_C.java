@@ -30,7 +30,8 @@ public class BPI_C {
 
     @FXML
     private Button ExitBttn;
-
+    String type ="Traditional";
+    String name = "BPI";
     @FXML
     void toBPI_output(ActionEvent event) {
         try {
@@ -46,7 +47,7 @@ public class BPI_C {
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(BPIamt.getText()), 0.000625, Integer.parseInt(BPImonths.getText()));
 
                 BPIresult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(BPImonths.getText())));
-
+                DatabaseHandler.insertData(type, name, BPIAMT, BPIm);
             }
 
         }catch (Exception e)

@@ -27,6 +27,8 @@ public class NetBank_C {
 
     @FXML
     private TextField NetbankResult;
+    String type ="Digital";
+    String name = "Netbank";
 
 
     @FXML
@@ -43,9 +45,8 @@ public class NetBank_C {
             } else
             {
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(NetbankAMT.getText()), 0.04, Integer.parseInt(NetbankMonths.getText()));
-
                 NetbankResult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(NetbankMonths.getText())));
-
+                DatabaseHandler.insertData(type, name, netbankAMT, Netbankm);
             }
 
         }catch (Exception e)

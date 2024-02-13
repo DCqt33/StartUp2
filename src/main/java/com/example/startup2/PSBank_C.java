@@ -24,6 +24,9 @@ public class PSBank_C {
     private TextField PSBankResult;
     @FXML
     private Button BackBttn;
+    String type ="Traditional";
+    String name = "PSBank";
+
 
     @FXML
     void toPSBank_output(ActionEvent event) {
@@ -39,8 +42,8 @@ public class PSBank_C {
             } else
             {
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(PsbankAmt.getText()), 0.001, Integer.parseInt(PSBankMonth.getText()));
-
                 PSBankResult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(PSBankMonth.getText())));
+                DatabaseHandler.insertData(type, name, PSBankAMT, PSBm);
 
             }
 

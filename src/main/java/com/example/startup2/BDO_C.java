@@ -30,9 +30,15 @@ public class BDO_C {
 
     @FXML
     private Button ExitBttn;
+    String type ="Traditional";
+    String name = "BDO";
+    double BDOnp;
+    final static int profit = 0;
+
     @FXML
     void toBDO_output(ActionEvent event) {
         try {
+
             //Interest Calculator
             double BDOAMT = Double.parseDouble(BDOamt.getText());
             int BDOm = Integer.parseInt(BDOmonth.getText());
@@ -40,12 +46,13 @@ public class BDO_C {
             if (BDOAMT < 5000 || BDOm < 0 || BDOm >= 1000) {
                 BDOResult.setText("ERROR");
 
+
             } else
             {
+
                 Interest_Calc Interest_calc = new Interest_Calc(Double.parseDouble(BDOamt.getText()), 0.000625, Integer.parseInt(BDOmonth.getText()));
-
                 BDOResult.setText("₱" + Interest_calc.calculateProfit(Integer.parseInt(BDOmonth.getText())));
-
+                DatabaseHandler.insertData(type, name, BDOAMT, BDOm);
             }
 
         }catch (Exception e)

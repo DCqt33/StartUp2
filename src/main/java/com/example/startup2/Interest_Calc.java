@@ -6,6 +6,7 @@ public class Interest_Calc {
         private double interestRate;    // The annual interest rate (in decimal)
         private double months;          // The time period in months
 
+
         // Constructor to initialize the principal and annual interest rate
         public Interest_Calc(double principal, double interestRate,int months) {
             this.principal = principal;

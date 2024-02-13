@@ -3,6 +3,7 @@ module com.example.startup2 {
     requires javafx.fxml;
 
     requires com.dlsc.formsfx;
+    requires java.sql;
 
     opens com.example.startup2 to javafx.fxml;
     exports com.example.startup2;
